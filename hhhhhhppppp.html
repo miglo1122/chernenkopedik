@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея клоунов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .gallery-item p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Галерея клоунов</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Clown_on_ball.jpg" alt="Клоун 1">
+            <p>Клоун на шаре</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Clown_dressed_in_rainbow_colors.jpg" alt="Клоун 2">
+            <p>Цветной клоун</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Kentucky_Clown.JPG" alt="Клоун 3">
+            <p>Клоун с белыми перчатками</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Clown_4.jpg" alt="Клоун 4">
+            <p>Весёлый клоун</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Karl_the_clown.jpg" alt="Клоун 5">
+            <p>Клоун с цветным носом</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Clown_Makeup.jpg" alt="Клоун 6">
+            <p>Яркий клоун</p>
+        </div>
+    </div>
+
+</body>
+</html>
